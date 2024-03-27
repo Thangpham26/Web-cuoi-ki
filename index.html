@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav-barcontainer">
+    <div class="container-fluid ">
+      <div class="navbar ms-5  ">
+        <div class=" d-flex justify-content-end text-light nav-pills nav-fill ">
+          <div class="nav-item p-3"><a href="#" class="nav-link p-3 rounded-pill nav-text " id="tab1">HOME</a></div>
+          <div class="nav-item p-3"><a href="#" class="nav-link p-3 rounded-pill nav-text" id="tab2">ABOUT</a></div>
+          <div class="nav-item p-3"><a href="#" class="nav-link p-3 rounded-pill nav-text" id="tab3">CONTACT</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bodyhome content">
+    <div class="bground-head">
+      <div class="head-text">
+        <h1 class="font-sans  ">Web Design Services: <br> Get a Custom Site Optimized <br> for SEO and Mobile</h1>
+      </div>
+      <div class="button-head" onclick="scrolling()">
+        Start explore
+      </div>
+      <div class="head-img">
+        <img src="robot-01.png" alt="" class="robot1-img">
+      </div>
+    </div>
+    <div class="bodypart">
+      <div class="our-services pt-5">Our services</div>
+      <div class="line py-4">________________</div>
+      <div class="product-container d-flex justify-content-around pt-5">
+        <!--Card 1 -->
+        <div class="products hidden card-1">
+          <div class="wrapper-card">
+            <div class="card-front">
+              <h5 class="product-name card-title ">Digital Marketing </h5>
+              <div class="digital-marketing">
+                <img src="digital-marketing.jpg" alt="" class="digital-marketing-pic">
+              </div>
+            </div>
+            <div class="card-back">
+              <p class=" product-decription card-text">
+                Thrive Internet Marketing Agency is a dynamic, versatile and full-service digital marketing agency that doesn’t rely on smoke and mirrors to attract new clients. Instead, Thrive trusts its own search engine optimization (SEO) and marketing skills to drive new customers to our website.              </p>
+            </div>
+          </div>
+        </div>
+        <!--Card 1 -->
+        <div class="products hidden card-2 ">
+          <div class="wrapper-card">
+            <div class="card-front">
+              <h5 class="product-name card-title ">Web Design </h5>
+              <div class="digital-marketing">
+                <img src="web-development-300x300.jpg" alt="" class="digital-marketing-pic">
+              </div>
+            </div>
+            <div class="card-back">
+              <p class=" product-decription card-text">
+                Launch a website that captures your brand, improves your conversion rates, and maximizes your revenue with WebFX, a leading web design agency providing web design services to businesses worldwide. Get pricing now with our free cost calculator or contact us online to speak with a strategist about our website design services.              </p>
+            </div>
+          </div>
+        </div>
+        <!--Card 1 -->
+        <div class="products hidden card-3">
+          <div class="wrapper-card">
+            <div class="card-front">
+              <h5 class="product-name card-title ">E-commerce Marketing </h5>
+              <div class="digital-marketing">
+                <img src="e-comerce-300x300.webp" alt="" class="digital-marketing-pic">
+              </div>
+            </div>
+            <div class="card-back">
+              <p class=" product-decription card-text">
+                Are your social media efforts falling short of expectations? Now more than ever, social media is a “pay-to-play” environment requiring all the resources you have: a cohesive game plan, 100 percent commitment and a well-defined budget         </p>
+            </div>
+          </div>
+        </div>
+        <!--Card 1 -->
+        <div class="products hidden card-4">
+          <div class="wrapper-card">
+            <div class="card-front">
+              <h5 class="product-name card-title ">Social Marketing </h5>
+              <div class="digital-marketing">
+                <img src="social-mkt.png" alt="" class="digital-marketing-pic">
+              </div>
+            </div>
+            <div class="card-back">
+              <p class=" product-decription card-text">
+                Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Question-->
+      <div class="question-part">
+        <div class="ques-text quest-text">
+          <h1 class="">QUESTION ?</h1>
+          <p class="p-5">Whether you’re curious about features, a free trial, or even press, we’re here to answer any
+            questions.</p>
+          <button type="button" onclick="openbtn('quesform')" class=" btn btn-warning btn-lg ">LET'S TALK NOW</button>
+        </div>
+      </div>
+       <!--Question end-->
+    </div>
+  </div>
+
+
+
+
+  
+
+
+  <div class=" questionform  content" id="quesform">
+    <div class=" quesform-warp d-flex justify-content-center align-content-center">
+      <div class=" questionform-form rounded  ">
+        <button type="button" onclick="buttonclose('quesform')" class="btn-close close float-end  m-3"></button>
+        <h4 class="contact-text"> Contact information</h4>
+        <form action="" class="mx-4">
+          <div class="mb-3 mt-3">
+            <label for="fname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="lname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <div class="aboutus-page conten active " id="aboutus">
+    <div class="about-header">
+      <h1 class="about-h1">
+        Team members
+      </h1>
+    </div>
+    <div class="mem-block">
+      <div class="mem-wrap mem-wrap-1" id="">
+        <div class="mem-img" onclick="clickCount('tron1','vuong1')" id="tron1" >
+          <img src="LTV.jpg" alt="" class="mem-pic rounded-5">
+        </div>
+        <div class="mem-infor rounded-5 rectangle" id="vuong1">
+        </div>
+      </div>
+      <div class="mem-wrap mem-wrap-2">
+        <div class="mem-img" onclick="clickCount2('tron2','vuong2')" id="tron2" >
+          <img src="QT.jpg" alt="" class="mem-pic rounded-5">
+        </div>
+        <div class="mem-infor rounded-5" id="vuong2">
+        </div>
+      </div>
+      <div class="mem-wrap mem-wrap-3">
+        <div class="mem-img" onclick="clickCount3('tron3','vuong3')" id="tron3">
+          <img src="TA.jpg" alt="" class="mem-pic rounded-5">
+        </div>
+        <div class="mem-infor rounded-5" id="vuong3">
+        </div>
+      </div>
+    </div>
+
+   
+
+
+
+  </div>
+
+
+
+  <div class="contact contact-page content">
+    <div class="contact-text">
+      <h1 class="contact-us-text">
+        CONTACT US
+      </h1>
+    </div>
+    <div class="contact-body">
+      <div class="contact-form">
+        <div class="form-header">
+          ONLINE INQUIRY
+        </div>
+        <form action="" class="mx-4">
+          <div class="mb-3 mt-3">
+            <label for="fname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="lname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+      <div class="contact-infor">
+        <div class="email-infor">
+          <h4 class="email-infor-section">quocthang261@gamil.com</h4>
+          <h4 class="phonenum-infor">091234556</h4>
+        </div>
+        <div class="email-infor">
+          <h4 class="email-infor-section">quocthang261@gamil.com</h4>
+          <h4 class="phonenum-infor">091234556</h4>
+        </div>
+        <div class="email-infor">
+          <h4 class="email-infor-section">quocthang261@gamil.com</h4>
+          <h4 class="phonenum-infor">091234556</h4>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+  <script src="jquery.js"></script>
+</body>
+
+</html>
